@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShoppingCategory">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcomeUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textAlignment="textEnd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shopByCatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop by Categories"
+            android:textColor="#0071ce"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clothingView"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/fleese" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clothing"
+            android:textAlignment="center"
+            android:textColor="#0071ce"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/groceryView"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/grocery_transparent_background" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grocery"
+            android:textAlignment="center"
+            android:textColor="#0071ce"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/electronicsView"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/levant_fhd_t5300_ua43t5300auxtw_frontblack_229857917" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electronics"
+            android:textAlignment="center"
+            android:textColor="#0071ce"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/beautyView"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/lipstick_png_27" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beauty"
+            android:textAlignment="center"
+            android:textColor="#0071ce"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</layout>
