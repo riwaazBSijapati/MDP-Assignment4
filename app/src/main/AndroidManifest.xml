@@ -27,6 +27,12 @@
             android:name="android.app.lib_name"
             android:value="" />
     </activity>
+    <activity android:name=".RegisterActivity"
+        android:exported="true">
+    </activity>
+        <activity android:name=".ShoppingCategory"
+            android:exported="true">
+        </activity>
 
     </application>
 

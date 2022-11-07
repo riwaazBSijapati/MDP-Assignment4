@@ -50,42 +50,46 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="30dp"
-        android:text="* required field" />
+        android:text="* required field"
+        android:textColor="#000000" />
 
     <TextView
-    android:id="@+id/fName"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="30dp"
-    android:layout_marginTop="20dp"
-    android:text="First Name *" />
+        android:id="@+id/fName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name *"
+        android:textColor="#000000" />
 
-<EditText
-    android:id="@+id/fNameInp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="25dp"
-    android:layout_marginTop="5dp"
-    android:ems="10"
-    android:background="@drawable/border"
-    />
+    <EditText
+        android:id="@+id/fNameInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textColor="#000000" />
 
-<TextView
-    android:id="@+id/lName"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="30dp"
-    android:layout_marginTop="5dp"
-    android:text="Last Name *" />
+    <TextView
+        android:id="@+id/lName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Last Name *"
+        android:textColor="#000000" />
 
-<EditText
-    android:id="@+id/lNameInp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="25dp"
-    android:layout_marginTop="5dp"
-    android:ems="10"
-    android:background="@drawable/border" />
+    <EditText
+        android:id="@+id/lNameInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:textColor="#000000" />
 
 
     <TextView
@@ -94,7 +98,8 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="5dp"
-        android:text="Email address *" />
+        android:text="Email address *"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/emailAddInp"
@@ -104,7 +109,8 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_marginTop="5dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/pwdTxt"
@@ -112,7 +118,8 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="5dp"
-        android:text="Password *" />
+        android:text="Password *"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/pwdInp"
@@ -122,7 +129,8 @@ app:layout_constraintTop_toTopOf="parent">
         android:layout_marginTop="5dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/createAcc"

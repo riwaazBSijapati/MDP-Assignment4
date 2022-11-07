@@ -51,7 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="30dp"
-            android:text="Email address (required)" />
+            android:text="Email address (required)"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/emailAddInp"
@@ -59,10 +60,10 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="5dp"
+            android:background="@drawable/border"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:background="@drawable/border"
- />
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/pwdTxt"
@@ -70,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="5dp"
-            android:text="Password (required)" />
+            android:text="Password (required)"
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/pwdInp"
@@ -78,9 +80,10 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="25dp"
             android:layout_marginTop="5dp"
-            android:ems="10"
             android:background="@drawable/border"
-            android:inputType="textPassword" />
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
 
         <TextView
             android:id="@+id/forgetPwd"
@@ -90,7 +93,8 @@
             android:clickable="true"
             android:focusable="true"
             android:text="Forget password?"
-            android:textAlignment="textEnd" />
+            android:textAlignment="textEnd"
+            android:textColor="#000000" />
 
         <Button
             android:id="@+id/createAcc"

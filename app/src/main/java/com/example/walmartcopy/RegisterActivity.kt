@@ -1,6 +1,7 @@
 package com.example.walmartcopy
 
 import android.annotation.SuppressLint
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -12,15 +13,21 @@ class RegisterActivity:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
-        (findViewById(R.id.createAcc) as Button).setOnClickListener{
-            val fsName=(findViewById(R.id.fNameInp) as TextView).toString()
-            val lnName=(findViewById(R.id.lNameInp) as TextView).toString()
-            val emailAdd=(findViewById(R.id.emailAddInp) as TextView).toString()
-            val passWrd=(findViewById(R.id.pwdInp) as TextView).toString()
-
-            val returnData = Intent()
-            returnData.putExtra("user",User(fsName,lnName,emailAdd,passWrd))
+        var createAcc =findViewById<Button>(R.id.createAcc)
+        createAcc.setOnClickListener{
+            var fsName=(findViewById(R.id.fNameInp) as TextView)
+            var f = fsName.text.toString()
+            var lnName=(findViewById(R.id.lNameInp) as TextView)
+            var l = lnName.text.toString()
+            var emailAdd=(findViewById(R.id.emailAddInp) as TextView)
+            var e = emailAdd.text.toString()
+            var passWrd=(findViewById(R.id.pwdInp) as TextView)
+            var p = passWrd.text.toString()
+            println(f+l+e+p)
+            val user = User(f,l,e,p)
+            var returnData = Intent(this,MainActivity::class.java)
+            returnData.putExtra("user",User(f,l,e,p))
+            setResult(Activity.RESULT_OK,returnData)
             finish()
         }
     }
