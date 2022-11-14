@@ -8,7 +8,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.walmartcopy.activities.RegisterActivity
+import com.example.walmartcopy.activities.ShoppingCategoryActivity
 import com.example.walmartcopy.databinding.ActivityMainBinding
+import com.example.walmartcopy.model.User
 
 //import com.example.walmartcopy.databinding.ActivityMainBinding
 
@@ -29,23 +32,9 @@ class MainActivity:AppCompatActivity() {
         usersList.add(User("Andrew","Glouberman","glouberJazzHat@hotmail.com","JohnMulaney"))
         usersList.add(User("Tiabeani","Grunkwitz","queenBean@hotmail.com","Abbi Jacobson"))
         usersList.add(User("R","S","r@b.s","rbs"))
+        usersList.add(User("a","s","d","f"))
         val signIn = findViewById(R.id.createAcc) as Button;
-//        signIn.setOnClickListener {
-//            var email: TextView = findViewById<TextView>(R.id.emailAddInp);
-//            var emailStr = (email.text).toString();
-//            var pass: TextView= findViewById<TextView>(R.id.pwdInp);
-//            var passStr = pass.text.toString();
-//            println(emailStr+" "+passStr)
-//            val builder= AlertDialog.Builder(this)
-//            builder.setTitle("This")
-//            builder.setMessage("Here I Am")
-//            builder.setPositiveButton("Yes"){
-//                dialogInf,which->Toast.makeText(applicationContext,"clickyes",Toast.LENGTH_SHORT).show()
-//            }
-//            val alertDialog:AlertDialog=builder.create()
-//            alertDialog.setCancelable(false)
-//            alertDialog.show()
-//        }
+
         signIn.setOnClickListener{
             var email: TextView = findViewById<TextView>(R.id.emailAddInp);
             var emailStr = (email.text).toString();
@@ -58,14 +47,14 @@ class MainActivity:AppCompatActivity() {
                 "Please Enter Valid Value",
                 Toast.LENGTH_SHORT)
             else{
-                val comprUsr=User("","",emailStr,passStr)
+                val comprUsr= User("","",emailStr,passStr)
                 for (usr in usersList){
                     if(usr.equals(comprUsr)){
                         println("Ahhhhh")
                         startActivity(
                             Intent(
                             this,
-                            ShoppingCategory::class.java
+                            ShoppingCategoryActivity::class.java
                         ).apply{
                             putExtra("email",emailStr)
                         })
@@ -75,7 +64,7 @@ class MainActivity:AppCompatActivity() {
         }
         val newAcc = findViewById(R.id.newAccount) as Button
         newAcc.setOnClickListener{
-            var intention = Intent(this,RegisterActivity::class.java)
+            var intention = Intent(this, RegisterActivity::class.java)
             lancher.launch(intention)
         }
 
@@ -89,7 +78,6 @@ class MainActivity:AppCompatActivity() {
                 result->
         if(result.resultCode== Activity.RESULT_OK){
             val user = result.data!!.getSerializableExtra("user")as User
-
             if(user!=null){
                 usersList.add(user)
             }else{

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -27,13 +28,18 @@
             android:name="android.app.lib_name"
             android:value="" />
     </activity>
-    <activity android:name=".RegisterActivity"
+    <activity android:name=".activities.RegisterActivity"
         android:exported="true">
     </activity>
-        <activity android:name=".ShoppingCategory"
+        <activity android:name=".activities.ShoppingCategoryActivity"
             android:exported="true">
         </activity>
-
+    <activity
+        android:name=".activities.ItemListActivity">
+    </activity>
+        <activity
+            android:name=".activities.ProductInfoDetail">
+        </activity>
     </application>
 
 

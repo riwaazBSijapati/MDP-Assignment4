@@ -1,4 +1,4 @@
-package com.example.walmartcopy
+package com.example.walmartcopy.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -7,6 +7,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.walmartcopy.MainActivity
+import com.example.walmartcopy.R
+import com.example.walmartcopy.model.User
 
 class RegisterActivity:AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -25,8 +28,8 @@ class RegisterActivity:AppCompatActivity() {
             var p = passWrd.text.toString()
             println(f+l+e+p)
             val user = User(f,l,e,p)
-            var returnData = Intent(this,MainActivity::class.java)
-            returnData.putExtra("user",User(f,l,e,p))
+            var returnData = Intent(this, MainActivity::class.java)
+            returnData.putExtra("user", User(f,l,e,p))
             setResult(Activity.RESULT_OK,returnData)
             finish()
         }

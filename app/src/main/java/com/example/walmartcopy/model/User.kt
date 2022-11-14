@@ -1,7 +1,4 @@
-package com.example.walmartcopy
-
-import android.os.Parcel
-import android.os.Parcelable
+package com.example.walmartcopy.model
 
 data class User(val firstName: String, val lastName: String, val userName: String, val password : String) : java.io.Serializable{
     @Override
